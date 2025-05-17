@@ -3,7 +3,7 @@ No media query for `xs` since this is the default in Bootstrap */
 .container,
 .container-fluid {
   --column-size: 12;
-  --spacer-x: 10px;
+  --spacer-x: 40px;
   --spacer-y: 10px;
 
   width: 100%;
@@ -32,7 +32,7 @@ No media query for `xs` since this is the default in Bootstrap */
 }
 
 .gx-0 {
-  --spacer-y: 0px;
+  --spacer-x: 0px;
 }
 
 .gy-0 {
@@ -317,7 +317,7 @@ No media query for `xs` since this is the default in Bootstrap */
   }
 
   .gx-sm-0 {
-    --spacer-y: 0px;
+    --spacer-x: 0px;
   }
 
   .gy-sm-0 {
@@ -457,7 +457,7 @@ No media query for `xs` since this is the default in Bootstrap */
   }
 
   .gx-md-0 {
-    --spacer-y: 0px;
+    --spacer-x: 0px;
   }
 
   .gy-md-0 {
@@ -600,7 +600,7 @@ No media query for `xs` since this is the default in Bootstrap */
   }
 
   .gx-lg-0 {
-    --spacer-y: 0px;
+    --spacer-x: 0px;
   }
 
   .gy-lg-0 {
@@ -740,7 +740,7 @@ No media query for `xs` since this is the default in Bootstrap */
   }
 
   .gx-xl-0 {
-    --spacer-y: 0px;
+    --spacer-x: 0px;
   }
 
   .gy-xl-0 {

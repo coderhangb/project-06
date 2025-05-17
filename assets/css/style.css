@@ -14,11 +14,87 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "DM Sans", sans-serif;
+  height: 7000px;
 }
 
 /* =======================================Common====================================== */
 a {
   text-decoration: none;
+}
+
+/* =======================================Header====================================== */
+.header {
+  position: sticky;
+  top: 0px;
+  background: #fbfaff;
+}
+
+.header__container {
+  max-width: 1330px;
+}
+
+.header__row {
+  padding: 20px 0px;
+  display: flex;
+  align-items: center;
+}
+
+.header__mail {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  order: 1;
+}
+
+.header__mail-icon-wrap,
+.header__menu-icon-wrap {
+  width: 46px;
+  height: 46px;
+  border: 1px solid rgba(93, 59, 238, 0.2);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__mail-link {
+  color: #080415;
+  font-size: 2.2rem;
+  font-weight: 500;
+  line-height: 1.36364;
+  text-decoration: underline;
+}
+
+.header__destop-logo {
+  width: 100px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: 223px;
+  order: 2;
+}
+
+.navbar {
+  order: 3;
+}
+
+.navbar__link {
+  color: #51586a;
+  font-size: 1.8rem;
+  padding: 8px 21px;
+}
+
+.navbar__link:hover {
+  text-shadow: 1px 0 0 currentColor;
+}
+
+.header__separate {
+  position: absolute;
+  width: 377px;
+  height: 1px;
+  background: #d6d3e2;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* =======================================Animation====================================== */

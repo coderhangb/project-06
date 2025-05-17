@@ -21,8 +21,78 @@
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/grid.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
   </head>
   <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container gx-lg-0 header__container">
+        <div class="header__row">
+          <div class="header__mail">
+            <a href="mailto:hi@arif.interactive" class="header__mail-icon-wrap">
+              <img
+                src="./assets/icon/mail-icon.svg"
+                alt=""
+                class="header__mail-icon"
+              />
+            </a>
+            <a
+              href="mailto:hi@arif.interactive"
+              class="header__mail-link show-on-destop"
+              >hi@arif.interactive</a
+            >
+          </div>
+          <img
+            src="./assets/icon/destop-logo.png"
+            alt=""
+            class="header__destop-logo show-on-destop"
+          />
+          <img
+            src="./assets/icon/logo.png"
+            alt=""
+            class="header__logo show-on-mobile"
+          />
+          <input type="checkbox" name="" id="checkbox" hidden />
+          <label
+            for="checkbox"
+            class="header__menu-icon-wrap show-on-mobile-flex"
+          >
+            <img src="./assets/icon/menu-icon.svg" alt="" class="menu-icon" />
+          </label>
+          <label for="checkbox" class="menu-overlay"></label>
+          <div class="mobile-header">
+            <label for="checkbox" class="checkbox-btn-wrap">
+              <img
+                class="checkbox-btn"
+                src="./assets/icon/x-solid.svg"
+                alt=""
+              />
+            </label>
+            <ul class="mobile-header__menu">
+              <li class="mobile-header__menu-link">
+                <a href="#!" class="mobile-navbar__link">Projects</a>
+              </li>
+              <li class="mobile-header__menu-link">
+                <a href="#!" class="mobile-navbar__link">Journey</a>
+              </li>
+              <li class="mobile-header__menu-link">
+                <a href="#!" class="mobile-navbar__link">Service</a>
+              </li>
+              <li class="mobile-header__menu-link">
+                <a href="#!" class="mobile-navbar__link">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <nav class="navbar show-on-destop">
+            <a href="#!" class="navbar__link">Projects</a>
+            <a href="#!" class="navbar__link">Journey</a>
+            <a href="#!" class="navbar__link">Service</a>
+            <a href="#!" class="navbar__link">Contact</a>
+          </nav>
+          <div class="header__separate show-on-mobile"></div>
+        </div>
+      </div>
+    </header>
     <!-- JavaScript -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
