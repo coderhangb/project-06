@@ -22,11 +22,42 @@ a {
   text-decoration: none;
 }
 
+.btn {
+  display: inline-block;
+  min-width: 170px;
+  background: #5d3bee;
+  color: #fdfdfd;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 62px;
+  text-align: center;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.section-heading {
+  color: #080415;
+  font-size: 5.6rem;
+  font-weight: 500;
+  line-height: 1.17857;
+  letter-spacing: -0.224rem;
+}
+
+.section-desc {
+  margin-top: 20px;
+  color: #51586a;
+  font-size: 1.8rem;
+  line-height: 1.66667;
+}
+
 /* =======================================Header====================================== */
 .header {
   position: sticky;
   top: 0px;
   background: #fbfaff;
+  z-index: 9;
 }
 
 .header__container {
@@ -95,6 +126,34 @@ a {
   bottom: 5px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+/* =======================================Hero====================================== */
+.hero {
+  padding: 24px 0 0;
+  overflow: hidden;
+  background: #fbfaff;
+}
+
+.hero__inner {
+  display: flex;
+  column-gap: 156px;
+}
+
+.hero__image {
+  position: relative;
+}
+
+.hero__decor {
+  position: absolute;
+  bottom: 0;
+  left: -215px;
+}
+
+.hero__decor-small {
+  position: absolute;
+  bottom: 0;
+  right: -820px;
 }
 
 /* =======================================Animation====================================== */
