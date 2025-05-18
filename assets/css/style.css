@@ -14,6 +14,10 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "DM Sans", sans-serif;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   height: 7000px;
 }
 
@@ -50,6 +54,15 @@ a {
   color: #51586a;
   font-size: 1.8rem;
   line-height: 1.66667;
+}
+
+@keyframes animation {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-25px, 25px);
+  }
 }
 
 /* =======================================Header====================================== */
@@ -123,7 +136,7 @@ a {
   width: 377px;
   height: 1px;
   background: #d6d3e2;
-  bottom: 5px;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -148,13 +161,19 @@ a {
   position: absolute;
   bottom: 0;
   left: -215px;
+  animation: animation 1s alternate infinite linear;
+  animation-delay: 0.5s;
 }
 
 .hero__decor-small {
   position: absolute;
   bottom: 0;
   right: -820px;
+  animation: animation 1s alternate infinite linear;
+  animation-delay: 0.5s;
 }
+
+/* =======================================Client====================================== */
 
 /* =======================================Animation====================================== */
 [data-aos] {

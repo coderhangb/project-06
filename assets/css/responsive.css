@@ -83,6 +83,7 @@
   font-size: 2.2rem;
 }
 
+/* =======================================Hero====================================== */
 .hero__inner {
   flex-direction: column;
 }
@@ -180,6 +181,59 @@
   transform: translateX(-50%);
 }
 
+/* =======================================Client====================================== */
+.client {
+  margin-top: 80px;
+  padding: 40px 0px;
+  overflow: hidden;
+}
+
+.client__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 40px;
+}
+
+.client__heading {
+  width: 45%;
+  text-align: center;
+  position: relative;
+  padding-top: 6px;
+  font-size: 2.8rem;
+  line-height: 1.21429;
+  letter-spacing: -0.112rem;
+}
+
+.client__heading::before {
+  content: "";
+  display: inline-block;
+  width: 48px;
+  height: 2px;
+  background: #5d3bee;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.client-group-wrap {
+  display: flex;
+  flex-direction: column;
+  row-gap: 35px;
+}
+
+.client-group-1,
+.client-group-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 35px;
+}
+
+.client-group-2 {
+  column-gap: 55px;
+}
+
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 }
@@ -207,6 +261,7 @@
     margin-left: 0;
   }
 
+  /* =======================================Hero====================================== */
   .hero__inner {
     flex-direction: row;
   }
@@ -230,17 +285,20 @@
     font-size: 8rem;
     line-height: 0.95;
     letter-spacing: -0.32rem;
+    animation-delay: 0.25s;
   }
 
   .hero__desc {
     max-width: 74%;
     font-size: 1.8rem;
     line-height: 1.66667;
+    animation-delay: 0.5s;
   }
 
   .hero__btn-group {
     margin-top: 50px;
     column-gap: 30px;
+    animation-delay: 0.75s;
   }
 
   .hero__cta {
@@ -274,7 +332,48 @@
     height: 40px;
   }
 
+  .hero__social:hover .hero__social-icon {
+    transform: scale(1.1);
+  }
+
   .hero__social-icon {
     scale: 1;
+    transition: transform 0.25s;
+  }
+
+  /* =======================================Client====================================== */
+  .client {
+    margin-top: 60px;
+  }
+
+  .client__inner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    column-gap: 105px;
+  }
+
+  .client__heading {
+    width: 33%;
+    text-align: start;
+    padding-top: 0;
+    padding-left: 99px;
+    font-size: 4.2rem;
+    line-height: 1.19048;
+    letter-spacing: -0.168rem;
+  }
+
+  .client__heading::before {
+    width: 86px;
+    height: 2px;
+    left: 0;
+    top: 22px;
+    transform: translateX(0);
+  }
+
+  .client-group-wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 66px;
   }
 }

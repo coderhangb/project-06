@@ -101,6 +101,7 @@
           <div class="hero__inner">
             <div class="hero__image">
               <img
+                data-aos="animate__fadeInUp"
                 src="./assets/img/portrait-img.png"
                 alt=""
                 class="hero__portrait"
@@ -123,14 +124,24 @@
             </div>
 
             <div class="hero__content">
-              <h1 class="section-heading hero__heading">
+              <h1
+                class="section-heading hero__heading"
+                data-aos="animate__fadeInRight"
+              >
                 An Interactive Designer
               </h1>
-              <p class="section-desc hero__desc">
+              <p
+                class="section-desc hero__desc"
+                data-aos="animate__fadeInRight"
+              >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
                 urna, non nisl tincidunt ut elementum turpis.
               </p>
-              <div class="hero__btn-group">
+              <div
+                class="hero__btn-group"
+                data-aos="animate__fadeInRight"
+                data-aos-offset="20"
+              >
                 <a href="#!" class="btn hero__cta">Book a Call</a>
                 <a href="#!" class="hero__btn">My Works</a>
               </div>
@@ -196,13 +207,56 @@
           </div>
         </div>
       </section>
-      
+
+      <!-- Client -->
+      <section class="client">
+        <div class="container gx-xl-0">
+          <div class="client__inner">
+            <h2 class="section-heading client__heading" data-aos="animate__fadeInLeft">
+              Meet my recent clients
+            </h2>
+            <div class="client-group-wrap" data-aos="animate__fadeInUp">
+
+              <div class="client-group-1">
+                <div class="client-group__item">
+                  <img src="./assets/icon/google.svg" alt="" />
+                </div>
+                <div class="client-group__item">
+                  <img src="./assets/icon/bros.svg" alt="" />
+                </div>
+                <div class="client-group__item">
+                  <img src="./assets/icon/up.svg" alt="" />
+                </div>
+                <div class="client-group__item">
+                  <img src="./assets/icon/creative-cloud.svg" alt="" />
+                </div>
+              </div>
+
+              <div class="client-group-2">
+                <div class="client-group__item">
+                  <img src="./assets/icon/mailchimp.svg" alt="" />
+                </div>
+                <div class="client-group__item">
+                  <img src="./assets/icon/adobe.svg" alt="" />
+                </div>
+                <div class="client-group__item">
+                  <img src="./assets/icon/woo.svg" alt="" />
+                </div>
+                <div class="client-group__item">
+                  <img src="./assets/icon/canva.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- JavaScript -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
+        disable: "mobile",
         useClassNames: true,
         initClassName: false,
         animatedClassName: "animate__animated",
