@@ -42,16 +42,20 @@
               >hi@arif.interactive</a
             >
           </div>
-          <img
-            src="./assets/icon/destop-logo.png"
-            alt=""
-            class="header__destop-logo show-on-destop"
-          />
-          <img
-            src="./assets/icon/logo.png"
-            alt=""
-            class="header__logo show-on-mobile"
-          />
+          <a href="#" class="header__destop-logo show-on-destop">
+            <img
+              src="./assets/icon/destop-logo.png"
+              alt=""
+              class="header__destop-logo show-on-destop"
+            />
+          </a>
+          <a href="#" class="header__logo show-on-mobile">
+            <img
+              src="./assets/icon/logo.png"
+              alt=""
+              class="header__logo show-on-mobile"
+            />
+          </a>
           <input type="checkbox" name="" id="checkbox" hidden />
           <label
             for="checkbox"
@@ -212,11 +216,13 @@
       <section class="client">
         <div class="container gx-xl-0">
           <div class="client__inner">
-            <h2 class="section-heading client__heading" data-aos="animate__fadeInLeft">
-              Meet my recent clients
+            <h2
+              class="section-heading client__heading"
+              data-aos="animate__fadeInLeft"
+            >
+              Meet my<br />recent clients
             </h2>
             <div class="client-group-wrap" data-aos="animate__fadeInUp">
-
               <div class="client-group-1">
                 <div class="client-group__item">
                   <img src="./assets/icon/google.svg" alt="" />
@@ -246,6 +252,67 @@
                   <img src="./assets/icon/canva.svg" alt="" />
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Specialities -->
+      <section class="special">
+        <div class="container gx-xl-0">
+          <h2 class="section-heading special__heading" data-aos="animate__fadeInUp">Specialities</h2>
+          <p class="section-desc special__desc" data-aos="animate__fadeInUp">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna,
+            non nisl tincidunt ut elementum turpis.
+          </p>
+
+          <div class="special-list" data-aos="animate__fadeInUp">
+            <!-- Item 1 -->
+            <div class="special-item">
+              <div class="special-item__thumb">
+                <img src="./assets/icon/special-thumb-1.svg" alt="" />
+              </div>
+              <h3 class="special-item__title">Product design</h3>
+              <p class="section-desc special-item__desc">
+                Lorem ipsum dolor sit amet, solor adipiscing elit. Non nisl
+                solor ut elementum turpis.
+              </p>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="special-item">
+              <div class="special-item__thumb">
+                <img src="./assets/icon/special-thumb-2.svg" alt="" />
+              </div>
+              <h3 class="special-item__title">UI/UX Design</h3>
+              <p class="section-desc special-item__desc">
+                Lorem ipsum dolor sit amet, solor adipiscing elit. Non nisl
+                solor ut elementum turpis.
+              </p>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="special-item">
+              <div class="special-item__thumb">
+                <img src="./assets/icon/special-thumb-3.svg" alt="" />
+              </div>
+              <h3 class="special-item__title">Interactive design</h3>
+              <p class="section-desc special-item__desc">
+                Lorem ipsum dolor sit amet, solor adipiscing elit. Non nisl
+                solor ut elementum turpis.
+              </p>
+            </div>
+          </div>
+
+          <div class="dots show-on-mobile-flex">
+            <div class="dot">
+              <div class="dot__active-border"></div>
+            </div>
+            <div class="dot active">
+              <div class="dot__active-border"></div>
+            </div>
+            <div class="dot">
+              <div class="dot__active-border"></div>
             </div>
           </div>
         </div>
