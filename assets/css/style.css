@@ -56,12 +56,30 @@ a {
   line-height: 1.66667;
 }
 
+.line-clamp {
+  --line: 3;
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line);
+  line-clamp: var(--line);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 @keyframes animation {
   from {
     transform: translate(0, 0);
   }
   to {
     transform: translate(-25px, 25px);
+  }
+}
+
+@keyframes left-right {
+  from {
+    transform: translateX(0)
+  }
+  to {
+    transform: translateX(15px);
   }
 }
 
