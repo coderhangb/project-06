@@ -76,7 +76,7 @@ a {
 
 @keyframes left-right {
   from {
-    transform: translateX(0)
+    transform: translateX(0);
   }
   to {
     transform: translateX(15px);
@@ -207,6 +207,7 @@ a {
   border-radius: 50%;
   opacity: 0.2;
   background: #080415;
+  cursor: pointer;
 }
 
 .dot.active {
@@ -228,6 +229,15 @@ a {
 
 .dot:not(.active) .dot__active-border {
   display: none;
+}
+
+/* =======================================Journey====================================== */
+.journey__separate {
+  animation-delay: 0.5s;
+}
+
+.journey-video {
+  animation-duration: 1.5s;
 }
 
 /* =======================================Animation====================================== */
