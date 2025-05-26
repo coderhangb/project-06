@@ -80,18 +80,18 @@
                 <a href="#journey" class="mobile-navbar__link">Journey</a>
               </li>
               <li class="mobile-header__menu-link">
-                <a href="#!" class="mobile-navbar__link">Service</a>
+                <a href="#service" class="mobile-navbar__link">Service</a>
               </li>
               <li class="mobile-header__menu-link">
-                <a href="#!" class="mobile-navbar__link">Contact</a>
+                <a href="#contact" class="mobile-navbar__link">Contact</a>
               </li>
             </ul>
           </div>
           <nav class="navbar show-on-destop">
             <a href="#project" class="navbar__link">Projects</a>
             <a href="#journey" class="navbar__link">Journey</a>
-            <a href="#!" class="navbar__link">Service</a>
-            <a href="#!" class="navbar__link">Contact</a>
+            <a href="#service" class="navbar__link">Service</a>
+            <a href="#contact" class="navbar__link">Contact</a>
           </nav>
           <div class="header__separate show-on-mobile"></div>
         </div>
@@ -1009,25 +1009,47 @@
       </section>
 
       <!-- Service -->
-      <section class="service">
+      <section class="service" id="service">
         <div class="container gx-xl-0">
-          <h2 class="section-heading service__heading">My atmosphere</h2>
-          <p class="section-desc service__desc">
+          <h2
+            class="section-heading service__heading"
+            data-aos="animate__fadeInUp"
+          >
+            My atmosphere
+          </h2>
+          <p class="section-desc service__desc" data-aos="animate__fadeInUp">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna,
             non nisl tincidunt ut elementum turpis.
           </p>
 
-          <a href="mailto:@interaction_arif" class="service__more">@interaction_arif</a>
+          <a
+            href="mailto:@interaction_arif"
+            class="service__more"
+            data-aos="animate__fadeInUp"
+            >@interaction_arif</a
+          >
 
-          <div class="service__img-list">
+          <div class="service__img-list" data-aos="animate__fadeInUp">
             <div class="service__img-wrap">
-              <img src="./assets/img/atmosphere-img-1.png" alt="" class="service__img">
+              <img
+                src="./assets/img/atmosphere-img-1.png"
+                alt=""
+                class="service__img"
+              />
             </div>
             <div class="service__img-wrap">
-              <img src="./assets/img/atmosphere-img-2.png" alt="" class="service__img">
+              <img
+                src="./assets/img/atmosphere-img-2.png"
+                alt=""
+                class="service__img"
+              />
             </div>
             <div class="service__img-wrap">
-              <img src="./assets/img/atmosphere-img-3.png" alt="" class="service__img">
+              <img
+                src="./assets/img/atmosphere-img-3.png"
+                alt=""
+                class="service__img"
+              />
             </div>
           </div>
 
@@ -1048,6 +1070,43 @@
               <div class="dot__active-border"></div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <!-- Banner -->
+      <section class="banner">
+        <div class="banner__wrap" data-aos="animate__fadeIn">
+          <img
+            src="./assets/icon/contact-emoji.png"
+            alt=""
+            class="banner__emoji"
+            data-aos="animate__fadeInUp"
+          />
+          <h2
+            class="section-heading banner__heading"
+            data-aos="animate__fadeInUp"
+          >
+            Got a project? <span>Let’s talk</span>
+          </h2>
+          <p class="section-desc banner__desc" data-aos="animate__fadeInUp">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna,
+            non nisl tincidunt ut elementum turpis.
+          </p>
+          <div class="banner__btn-wrap" data-aos="animate__fadeInUp">
+            <a href="#!" class="btn banner__btn">Book a Call</a>
+          </div>
+
+          <img
+            src="./assets/img/hero-decor.png"
+            alt=""
+            class="banner__decor-small-1 show-on-destop"
+          />
+          <img src="./assets/img/hero-decor.png" alt="" class="banner__decor" />
+          <img
+            src="./assets/img/hero-decor.png"
+            alt=""
+            class="banner__decor-small-2 show-on-destop"
+          />
         </div>
       </section>
     </main>

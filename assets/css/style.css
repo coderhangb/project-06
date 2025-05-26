@@ -18,7 +18,6 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  height: 7000px;
 }
 
 /* =======================================Common====================================== */
@@ -71,6 +70,15 @@ a {
   }
   to {
     transform: translate(-25px, 25px);
+  }
+}
+
+@keyframes reverse-animation {
+  from {
+    transform: translate(-25px, 25px);
+  }
+  to {
+    transform: translate(0, 0);
   }
 }
 
