@@ -1478,6 +1478,7 @@
     max-width: calc(100% - 40px);
     margin-left: auto;
     margin-right: auto;
+    animation-delay: 0.25s;
   }
 
   .footer__row-top {
